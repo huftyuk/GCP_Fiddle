@@ -14,7 +14,7 @@
 
 # [START app]
 import logging
-#import urllib
+import urllib
 
 from flask import Flask
 
@@ -24,9 +24,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-#	DweetbaseURL = "https://dweet.io/dweet/for/SHTestTest?"
-#	dweeturlstring = DweetbaseURL  + "TAmbient=" + "10"
-#	f = urllib.urlopen(dweeturlstring)
+   DweetbaseURL = "https://dweet.io/dweet/for/SHTestTest?"
+   dweeturlstring = DweetbaseURL  + "TAmbient=" + "10"
+   f = urllib.urlopen(dweeturlstring)
    return 'Hello World! from Flask My Demo'
 
 
