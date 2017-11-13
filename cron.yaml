@@ -1,0 +1,4 @@
+cron:
+- description: "daily summary job"
+  url: /testcron
+  schedule: every 10 minutes
